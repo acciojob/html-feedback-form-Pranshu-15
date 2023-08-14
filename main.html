@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feedback Form</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Feedback Form</h1>
-  <form action="process_feedback.php" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br>
+	<!-- the entire body must be written by student -->
+	<h1>Feedback Form</h1>
+	<form action = "#" method = "post">
+		<label for = "name">Name</label><br>
+		<input type ="text" id = "name" placeholder = "Name" name ="name" minlength = "3" maxlength= "50" required> <br>
+		<label for = "portfolio">Portfolio</label><br>
+		<input type ="url" id = "portfolio" placeholder = "portfolio" name ="portfolio"  required> <br>
+		<label for = "favColor">Favorite Color</label><br>
+		<input type ="color" id = "favColor"> <br>
+		<label for = "likeness">Likeness</label><br>
+		<input type ="range" id = "likeness" name ="favColor" minlength = "1" maxlength = "100"> <br>
+		<input type="submit" value="Submit">
+	</forms>
+    <script type="text/javascript" src="./script.js">
+</script>
 
-    <label for="portfolio">Portfolio:</label>
-    <input type="url" id="portfolio" name="portfolio" required><br>
-
-    <label for="favColor">Favorite Color:</label>
-    <input type="color" id="favColor" name="favColor"><br>
-
-    <label for="likeness">Likeness (1-100):</label>
-    <input type="range" id="likeness" name="likeness" min="1" max="100" required><br>
-
-    <input type="submit" value="Submit">
-  </form>
 </body>
+
 </html>
